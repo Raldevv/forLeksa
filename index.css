@@ -167,6 +167,7 @@ main {
     .navbar {
         padding: 0 15px;
         height: 60px;
+        margin-top: 50px;
     }
 
     .navbar-logo {
