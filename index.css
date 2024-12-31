@@ -1,10 +1,9 @@
-
+/* Basic Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: 'Arial', sans-serif;
@@ -16,7 +15,6 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
-
 
 .navbar {
     display: flex;
@@ -78,7 +76,6 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-
 main {
     display: flex;
     justify-content: space-between;
@@ -88,7 +85,6 @@ main {
     gap: 50px;
 }
 
-
 .content-1 {
     display: flex;
     flex-wrap: wrap;
@@ -96,7 +92,6 @@ main {
     max-width: 1200px;
     padding: 20px;
 }
-
 
 .left-section {
     flex: 1;
@@ -106,7 +101,6 @@ main {
     gap: 20px;
     padding-left: 20px;
 }
-
 
 .content-1 .box-1, .content-1 .box-2 {
     color: #000;
@@ -122,7 +116,6 @@ main {
     margin-left: 30px;
 }
 
-
 .right-section {
     flex: 1;
     display: flex;
@@ -131,7 +124,6 @@ main {
     margin-left: auto;
     margin-right: -450px;
 }
-
 
 .img-placeholder {
     width: 650px;
@@ -145,7 +137,6 @@ main {
     overflow: hidden;
     position: relative;
 }
-
 
 .slider-container {
     display: flex;
@@ -162,8 +153,13 @@ main {
     border-radius: 10px;
 }
 
-
+/* Media Query for max-width: 768px */
 @media (max-width: 768px) {
+    /* Hide all h2 elements */
+    h2 {
+        display: none;
+    }
+
     .navbar {
         padding: 0 15px;
         height: 60px;
@@ -217,7 +213,13 @@ main {
     }
 }
 
+/* Media Query for max-width: 480px */
 @media (max-width: 480px) {
+    /* Hide all h2 elements */
+    h2 {
+        display: none;
+    }
+
     .navbar {
         padding: 0 10px;
         height: 50px;
