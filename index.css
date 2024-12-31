@@ -1,11 +1,11 @@
-/* Default Styles (for larger screens) */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-/* Navbar Styles */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-/* Main Content */
+
 main {
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@ main {
     gap: 50px;
 }
 
-/* Section Styling */
+
 .content-1 {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +97,7 @@ main {
     padding: 20px;
 }
 
-/* Left Section */
+
 .left-section {
     flex: 1;
     margin-top: 45px;
@@ -107,7 +107,7 @@ main {
     padding-left: 20px;
 }
 
-/* Box Styling */
+
 .content-1 .box-1, .content-1 .box-2 {
     color: #000;
     border: 2px solid #000;
@@ -122,7 +122,7 @@ main {
     margin-left: 30px;
 }
 
-/* Right Section (Image Placeholder) */
+
 .right-section {
     flex: 1;
     display: flex;
@@ -132,37 +132,37 @@ main {
     margin-right: -450px;
 }
 
-/* Image Slider Styles */
+
 .img-placeholder {
-    width: 650px; /* Fixed width for the placeholder */
-    height: 650px; /* Fixed height for the placeholder */
+    width: 650px;
+    height: 650px;
     background-color: #ddd;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     border: 2px solid #ccc;
-    overflow: hidden; /* Hide anything outside the placeholder */
-    position: relative; /* Ensure children are positioned relative to this */
+    overflow: hidden;
+    position: relative;
 }
 
-/* Slider Container */
+
 .slider-container {
     display: flex;
-    flex-direction: column; /* Stack images vertically */
-    position: absolute; /* For moving the images */
-    top: 0; /* Ensure it's positioned at the top initially */
-    transition: transform 2s ease-in-out; /* Smooth transition for sliding effect */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    transition: transform 2s ease-in-out;
 }
 
 .slider-container img {
-    width: 100%; /* Ensure the image fills the width of the container */
-    height: 650px; /* Match the height of the placeholder */
-    object-fit: cover; /* Ensures images cover the container area without distortion */
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
     border-radius: 10px;
 }
 
-/* Responsive Styles for Android Phones */
+
 @media (max-width: 768px) {
     .navbar {
         padding: 0 15px;
