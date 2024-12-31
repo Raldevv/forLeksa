@@ -77,34 +77,6 @@ body::-webkit-scrollbar {
     width: 100%;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack logo and links vertically on smaller screens */
-        align-items: center;
-    }
-
-    .navbar-logo {
-        margin-bottom: 20px; /* Increase spacing between logo and nav links on smaller screens */
-    }
-
-    .nav-links {
-        flex-direction: column; /* Stack the nav links vertically */
-        gap: 15px; /* Reduce space between nav links */
-    }
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column; /* Stack links vertically */
-        gap: 20px;
-        align-items: center; /* Center the links */
-    }
-
-    .nav-links ul li a {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
-
 /* Container to hold boxes */
 .container {
     display: flex;
