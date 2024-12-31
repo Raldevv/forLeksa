@@ -145,21 +145,3 @@ body::-webkit-scrollbar {
     background-color: #FFE6E6; /* Light rose background */
     border-color: #FF6666; /* Rose border */
 }
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* Stack boxes vertically */
-        align-items: center;
-    }
-
-    .box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7 {
-        padding: 20px;
-        font-size: 1rem;
-    }
-
-    /* Adjust font size further for smaller devices */
-    body {
-        font-size: 16px;
-    }
-}
