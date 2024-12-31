@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>2nd Anniversary</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <h2>2ndniversary</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pictures.html">Pictures</a></li>
+                    <li><a href="notes.html">Notes</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="content-1">
+            <div class="left-section">
+                <div class="box-1">
+                    hi lek! ako ra diay ni imong lalab inting, happy ko sa mga nahitabo ron especially natong duha, aside sa uban things, happy ko para natong duha. and i just want to say that i am grateful to have you this another new year that we have to celebrate again, together. i will always love you no matter how things get complicated, maybe not physically shown sometimes, but emotionally, yes, i love you the most, yesterday, today and tomorrow.
+                </div>
+                <div class="box-2">
+                    i still remember the days of how you tryna get my attention, chemz, u thought i wouldn't notice it? sige lang. this is one of the most efforted gift for someone who i loved the most. even me, i would not make this for myself as i know how much time it would make, but yes, this right here is one of the best gift i have given to a special someone. 
+                </div>
+            </div>
+            <div class="right-section">
+                <div class="img-placeholder">
+                    <div class="slider-container">
+                        <img src="pic1.jfif" alt="Image 1">
+                        <img src="pic2.jfif" alt="Image 2">
+                        <img src="pic3.jfif" alt="Image 3">
+                        <img src="pic4.jfif" alt="Image 3">
+                        <img src="pic5.jfif" alt="Image 3">
+                        <img src="pic6.jfif" alt="Image 3">
+                        <img src="pic7.jfif" alt="Image 3">
+                        <img src="pic8.jfif" alt="Image 3">
+                        <img src="pic9.jfif" alt="Image 3">
+                        <img src="pic10.jfif" alt="Image 3">
+                        <img src="pic11.jfif" alt="Image 3">
+                        <img src="pic12.jfif" alt="Image 3">
+                        <img src="pic13.jfif" alt="Image 3">
+                        <img src="pic14.jfif" alt="Image 3">
+                        <img src="pic15.jfif" alt="Image 3">
+                        <img src="pic16.jfif" alt="Image 3">
+                        <img src="pic17.jfif" alt="Image 3">
+                        <img src="pic18.jfif" alt="Image 3">
+                        <img src="pic19.jfif" alt="Image 3">
+                        <img src="pic20.jfif" alt="Image 3">
+                        <img src="pic21.jfif" alt="Image 3">
+                        <img src="pic22.jfif" alt="Image 3">
+                        <img src="pic23.jfif" alt="Image 3">
+                        <img src="pic24.jfif" alt="Image 3">
+                        <img src="pic25.jfif" alt="Image 3">
+                        <img src="pic26.jfif" alt="Image 3">
+                        <img src="pic27.jfif" alt="Image 3">
+                        <img src="pic28.jfif" alt="Image 3">
+                        <img src="pic29.jfif" alt="Image 3">
+                        <img src="pic30.jfif" alt="Image 3">
+                        <img src="pic31.jfif" alt="Image 3">
+                        <img src="pic32.jfif" alt="Image 3">
+                        <img src="pic33.jfif" alt="Image 3">
+                        <img src="pic34.jfif" alt="Image 3">
+                        <img src="pic35.jfif" alt="Image 3">
+                        <img src="pic36.jfif" alt="Image 3">
+                        <img src="pic37.jfif" alt="Image 3">
+                        <img src="pic38.jfif" alt="Image 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const sliderContainer = document.querySelector('.slider-container');
+        const images = document.querySelectorAll('.slider-container img');
+        let currentIndex = 0;
+
+        // Set the height of the slider container and each image
+        const imageHeight = 650; // Adjust based on your design
+        sliderContainer.style.height = `${imageHeight * images.length}px`;
+
+        // Function to slide the images
+        function slideImages() {
+            currentIndex++;
+
+            // Check if we're at the last image
+            if (currentIndex >= images.length) {
+                // Reset the slider instantly to the top (first image)
+                sliderContainer.style.transition = 'transform 0.5s ease-in-out'; // Faster transition back
+                sliderContainer.style.transform = `translateY(0)`; // Jump to the first image
+                currentIndex = 0; // Reset index to start from the first image again
+
+                // After reset, apply the smooth sliding transition for the next cycle
+                setTimeout(() => {
+                    sliderContainer.style.transition = 'transform 2s ease-in-out'; // Smooth transition for next slide
+                }, 500); // Give time for the instant reset to finish before the next smooth slide
+            } else {
+                // Apply smooth transition for sliding down to the next image
+                sliderContainer.style.transition = 'transform 2s ease-in-out';
+                sliderContainer.style.transform = `translateY(-${currentIndex * imageHeight}px)`;
+            }
+        }
+
+        // Call slideImages function every 1.95 seconds (slightly less than 2 seconds)
+        setInterval(slideImages, 1950);
+
+    </script>
+
+</body>
+</html>
