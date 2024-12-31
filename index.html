@@ -85,33 +85,26 @@
         const images = document.querySelectorAll('.slider-container img');
         let currentIndex = 0;
 
-        // Set the height of the slider container and each image
-        const imageHeight = 650; // Adjust based on your design
+        const imageHeight = 650;
         sliderContainer.style.height = `${imageHeight * images.length}px`;
 
-        // Function to slide the images
         function slideImages() {
             currentIndex++;
 
-            // Check if we're at the last image
             if (currentIndex >= images.length) {
-                // Reset the slider instantly to the top (first image)
-                sliderContainer.style.transition = 'transform 0.5s ease-in-out'; // Faster transition back
-                sliderContainer.style.transform = `translateY(0)`; // Jump to the first image
-                currentIndex = 0; // Reset index to start from the first image again
+                sliderContainer.style.transition = 'transform 0.5s ease-in-out';
+                sliderContainer.style.transform = `translateY(0)`;
+                currentIndex = 0;
 
-                // After reset, apply the smooth sliding transition for the next cycle
                 setTimeout(() => {
-                    sliderContainer.style.transition = 'transform 2s ease-in-out'; // Smooth transition for next slide
-                }, 500); // Give time for the instant reset to finish before the next smooth slide
+                    sliderContainer.style.transition = 'transform 2s ease-in-out';
+                }, 500);
             } else {
-                // Apply smooth transition for sliding down to the next image
                 sliderContainer.style.transition = 'transform 2s ease-in-out';
                 sliderContainer.style.transform = `translateY(-${currentIndex * imageHeight}px)`;
             }
         }
 
-        // Call slideImages function every 1.95 seconds (slightly less than 2 seconds)
         setInterval(slideImages, 1950);
 
     </script>
