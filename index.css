@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* Default Styles (for larger screens) */
 * {
     margin: 0;
     padding: 0;
@@ -160,4 +160,98 @@ main {
     height: 650px; /* Match the height of the placeholder */
     object-fit: cover; /* Ensures images cover the container area without distortion */
     border-radius: 10px;
+}
+
+/* Responsive Styles for Android Phones */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 15px;
+        height: 60px;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+        left: 15px;
+    }
+
+    .nav-links {
+        margin-left: 0;
+    }
+
+    .nav-links ul {
+        gap: 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-section {
+        padding-left: 10px;
+    }
+
+    .content-1 .box-1, .content-1 .box-2 {
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .right-section {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .img-placeholder {
+        width: 100%;
+        height: 400px;
+    }
+
+    .slider-container img {
+        height: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 0 10px;
+        height: 50px;
+    }
+
+    .navbar-logo {
+        font-size: 18px;
+    }
+
+    .nav-links ul {
+        gap: 15px;
+    }
+
+    .nav-links ul li a {
+        font-size: 14px;
+    }
+
+    .left-section {
+        padding-left: 5px;
+    }
+
+    .content-1 .box-1, .content-1 .box-2 {
+        padding: 20px;
+    }
+
+    .right-section {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .img-placeholder {
+        height: 350px;
+    }
+
+    .slider-container img {
+        height: 350px;
+    }
 }
